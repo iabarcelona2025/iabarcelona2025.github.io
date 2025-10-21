@@ -1,26 +1,5 @@
-{% if page.title %}
-<h1>{{page.title}}</h1>
-{% endif %}
-{% if page.blog.page_type == 'search' or page.blog.page_type == 'tags' %}
-  <hr class='f_blog_separator'>
-{% endif %}
-{% if page.blog.tag %}
-  <h3>Posts tagged with {{page.blog.tag}}</h3>
-{% endif %}
-<ol class='f_blog_list f_blog_body_typography_color'>
-  {% for post in page.blog.posts %}
-    <li>
-      <a class='f_blog_listing' href='{{post['path']}}' tabindex='0'>
-        <h4 class='f_blog_title in_listing f_blog_title_typography f_blog_title_typography_hover'>{{ post['title'] }}</h4>
-        {% unless page.blog.hide_published_on %}<em class='f_blog_date in_listing f_blog_body_typography'>{{ post['publish_date'] }}</em>{% endunless %}
-        {% if page.blog.show_preview %}
-          <p class='f_blog_body_typography'>{{post['content_preview']}}</p>
-        {% endif %}
-      </a>
-    </li>
-    <hr class='f_blog_separator'>
-  {% endfor %}
-</ol>
-
-</body>
-</html>
+<h1 style="display: inline-block; background-color: rgb(255, 255, 255, 0);">Page Content</h1><br>
+<br>
+<br>
+<br>
+<gallery-grid columns="2" gutter="1rem" mobile-columns="1"><media-item class="zoomable" hash="I1126213935267071745551446649436" slot="row-0-0 first-row first-in-row"><figcaption class="caption" slot="caption">Lorem Ipsum</figcaption></media-item><media-item class="zoomable" hash="I1126213935267071745551446649436" slot="row-0-1 first-row last-in-row"><figcaption class="caption" slot="caption">Lorem Ipsum</figcaption></media-item></gallery-grid>
