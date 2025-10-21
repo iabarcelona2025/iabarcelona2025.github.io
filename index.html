@@ -1,27 +1,59 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creative Portfolio - 3D Artist & Director</title>
-    <meta name="description" content="Award-winning 3D artist and creative director specializing in motion design, architectural visualization, and digital art" />
-    <meta name="author" content="Creative Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">MI NOMBRE</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <meta property="og:title" content="Creative Portfolio - 3D Artist & Director" />
-    <meta property="og:description" content="Award-winning 3D artist and creative director" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main class="main">
+    <section id="hero" class="hero">
+      <h2 class="hero-title">I AM <span class="highlight">MI NOMBRE</span></h2>
+      <p class="hero-subtitle">// ART DIRECTOR & FILMMAKER</p>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@creative_portfolio" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <section id="work" class="work">
+      <h3 class="section-title">SELECTED PROJECTS</h3>
+      <div class="grid">
+        <article class="project">
+          <img src="path/to/image1.jpg" alt="Proyecto 1">
+          <h4>Project Title 1</h4>
+        </article>
+        <article class="project">
+          <img src="path/to/image2.jpg" alt="Proyecto 2">
+          <h4>Project Title 2</h4>
+        </article>
+        <!-- más proyectos -->
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section id="about" class="about">
+      <h3 class="section-title">ABOUT ME</h3>
+      <p>Soy Director de Arte y Filmmaker … (tu texto) …</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3 class="section-title">CONTACT</h3>
+      <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MI NOMBRE. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
 </html>
